@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', default='your secret key')
 DEBUG = 'RENDER' not in os.environ
 
 ALLOWED_HOSTS = [
-    'tuservicio.onrender.com',
+    'requisitos.onrender.com',
     'localhost',
     '127.0.0.1'
 ]
