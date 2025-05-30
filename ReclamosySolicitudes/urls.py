@@ -21,9 +21,11 @@ from Reclamos import views as reclamos_views
 
 
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('SesionUsuarios.urls')),
     path('reclamos/', include('Reclamos.urls')),
     path('solicitudes/', include('solicitudes.urls')),
+    path('', lambda request: HttpResponse("¡Hola, Render está funcionando!")),
 ]
